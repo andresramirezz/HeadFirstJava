@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package com.headFirstJava.Exercise;
+
+/**
+ * @author Andres Ramirez
+ *
+ */
+public class Excersice1b {
+
+	public static void main(String[] args) {
+		int x=5;
+		
+		while (x>1) {
+			
+			x-=1;
+			if (x<3) {
+				System.out.println("small x");
+			}
+			
+		}
+
+	}
+
+}
