@@ -7,9 +7,8 @@ package com.headFirstJava.PoolPuzzle;
  * @author Andres Ramirez
  *
  */
-
-abstract class Picasso implements Nose{
+public class Acts extends Picasso{
 	public int iMethod() {
-		return 7;
+	return 5;
 	}
 }

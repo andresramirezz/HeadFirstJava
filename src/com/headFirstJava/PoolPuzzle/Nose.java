@@ -7,6 +7,6 @@ package com.headFirstJava.PoolPuzzle;
  * @author Andres Ramirez
  *
  */
-public interface Nose {
+interface Nose {
 	public int iMethod();
 }

@@ -8,6 +8,6 @@ package com.headFirstJava.PoolPuzzle;
  *
  */
 
-public class Clowns {
-
+class Clowns extends Picasso{
+	
 }

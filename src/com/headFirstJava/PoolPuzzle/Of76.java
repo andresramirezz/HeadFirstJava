@@ -12,13 +12,13 @@ public class Of76 extends Clowns{
 	
 	public static void main (String[] args) {
 		
-		Of76[] i = new Nose[3];
-		i[0] = new ____
-		i[1] = new ____
-		i[2] = new ____
+		Nose[] i = new Nose[3];
+		i[0] = new Acts();
+		i[1] = new Clowns();
+		i[2] = new Of76();
 		
 		for ( int x = 0; x < 3; x++ ) {
-			System.out.println(______+ " " +_______.getClass() );
+			System.out.println( i[x].iMethod()+ " " + i[x].getClass() );
 		}
 	}
 }
