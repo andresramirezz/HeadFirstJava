@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.headFirstJava.BeatBox;
 
 import javax.sound.midi.MidiEvent;
@@ -19,14 +16,13 @@ public class MiniMusicCmdLine {
 	public static void main(String[] args) {
 		
 		MiniMusicCmdLine mini = new MiniMusicCmdLine();
-		if ( args.length <2) {
+		if ( args.length < 1 ) {
 			System.out.println("Don't forget the instruments and note args");
 		}else {
 			int instrument = Integer.parseInt(args[0]);
 			int note = Integer.parseInt(args[1]);
 			mini.play(instrument, note);
 		}
-
 	}
 	
 	public void play( int instrument, int note ) {
@@ -36,8 +32,6 @@ public class MiniMusicCmdLine {
 			Sequence seq = new Sequence (Sequence.PPQ, 4);
 			Track track = seq.createTrack();
 
-			MidiEvent event = null;
-			
 			ShortMessage first = new ShortMessage();
 			first.setMessage(192, 1, instrument, 0);
 			MidiEvent changeInstrument = new MidiEvent( first, 1 );
@@ -59,6 +53,4 @@ public class MiniMusicCmdLine {
 			ex.printStackTrace();
 		}
 	}
-
-
 }

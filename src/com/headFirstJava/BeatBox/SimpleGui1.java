@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.headFirstJava.BeatBox;
 
 import javax.swing.*;
@@ -21,5 +18,4 @@ public class SimpleGui1 {
 		frame.setSize(300, 300);
 		frame.setVisible(true);
 	}
-
 }

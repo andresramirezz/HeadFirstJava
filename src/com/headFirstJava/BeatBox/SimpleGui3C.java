@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.headFirstJava.BeatBox;
 
 import java.awt.*;

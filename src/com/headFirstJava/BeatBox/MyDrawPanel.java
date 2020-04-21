@@ -1,11 +1,7 @@
-/**
- * 
- */
 package com.headFirstJava.BeatBox;
 
 import java.awt.*;
 import java.awt.Graphics;
-
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
@@ -15,10 +11,12 @@ import javax.swing.JPanel;
  */
 public class MyDrawPanel extends JPanel{
 	
+	private static final long serialVersionUID = 1L;
+
 	public void paintComponent( Graphics g) {
 		
 		Graphics2D g2d = (Graphics2D) g;
-		Image img = new ImageIcon("/Users/SOHIN/Desktop/pic.png").getImage();
+		Image img = new ImageIcon("./pic.png").getImage();
 		
 		int red = (int) (Math.random() * 256 );
 		int green = (int) (Math.random() * 256 );

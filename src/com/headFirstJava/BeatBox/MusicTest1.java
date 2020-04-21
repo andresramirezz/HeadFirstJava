@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.headFirstJava.BeatBox;
 
 import javax.sound.midi.*;
@@ -15,7 +12,7 @@ public class MusicTest1 {
 		
 		try {
 			Sequencer sequencer = MidiSystem.getSequencer();
-			System.out.println("We got a sequencer");
+			System.out.println("We got a sequencer. " + sequencer);
 		}catch (MidiUnavailableException ex) {
 			System.out.println("Bummer");
 		}
@@ -24,7 +21,5 @@ public class MusicTest1 {
 	public static void main(String[] args) {
 		MusicTest1 mt = new MusicTest1();
 		mt.play();
-
 	}
-
 }

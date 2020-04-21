@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.headFirstJava.BeatBox;
 
 import java.awt.*;
@@ -10,7 +7,7 @@ import javax.swing.JPanel;
 
 /**
  * @author Andres Ramirez
- *
+ * My first Music video
  */
 public class MiniMusicPlayer2 {
 
@@ -65,6 +62,7 @@ public class MiniMusicPlayer2 {
 	}
 	
 	class MyDrawPanel extends JPanel implements ControllerEventListener{
+		private static final long serialVersionUID = 1L;
 		boolean msg = false;
 		
 		public void controlChange( ShortMessage event ) {

@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.headFirstJava.BeatBox;
 
 import java.awt.Color;
@@ -11,7 +8,7 @@ import javax.swing.JPanel;
 
 /**
  * @author Andres Ramirez
- *
+ * Simple Animation
  */
 public class SimpleAnimation {
 	
@@ -46,6 +43,8 @@ public class SimpleAnimation {
 	}
 	
 	class MyDrawPanel extends JPanel{
+		private static final long serialVersionUID = 1L;
+
 		public void paintComponent( Graphics g) {
 			g.setColor(Color.PINK);
 			g.fillRect(0, 0, this.getWidth(), this.getHeight());
